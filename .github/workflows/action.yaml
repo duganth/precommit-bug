@@ -11,7 +11,6 @@ jobs:
     - uses: actions/setup-python@v3
     - name: get origin
       run: | 
-        git remote set-url origin git@github.com:duganth/precommit-bug.git
         git fetch origin
     - uses: pre-commit/action@v3.0.0
       with:
