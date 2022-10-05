@@ -9,6 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v3
+    - name: get origin
+      run: git fetch origin
     - uses: pre-commit/action@v3.0.0
       with:
         extra_args: --from-ref origin/main --to-ref HEAD
