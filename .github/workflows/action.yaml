@@ -14,4 +14,4 @@ jobs:
         git fetch origin
     - uses: pre-commit/action@v3.0.0
       with:
-        extra_args: --from-ref origin/HEAD --to-ref HEAD
+        extra_args: --from-ref origin/main --to-ref HEAD
